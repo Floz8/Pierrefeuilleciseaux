@@ -3,7 +3,7 @@ var choixP1
 var choixP2
 var scorep1 = 0
 var scorep2 = 0
-console.log("coucou")
+
 function random(){
     var choix =Math.random()*100
     if (choix < 33) choix="p"
