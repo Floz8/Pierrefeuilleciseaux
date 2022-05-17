@@ -76,9 +76,7 @@ function lancer(){
     }
     if(scorep1==0 && scorep2==0) {
         console.log("MATCH NUL")
-    }else{
-    while(scorep1 == scorep2){lancer()}
-}
+    }
    
     
     console.log("SCORE:       "+"Player 1: "+scorep1 + "  Player2: "+scorep2)
