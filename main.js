@@ -67,14 +67,18 @@ function lancer(){
     compare(choixP1,choixP2)}
 
     function match(nombrepartie) {
-        scorep1=0
-        scorep2=0
+        scorep1=0;
+        scorep2=0;
  
     for(var i=0; i<nombrepartie;i++){
         lancer()
         
     }
+    if(scorep1==0 && scorep2==0) {
+        console.log("MATCH NUL")
+    }else{
     while(scorep1 == scorep2){lancer()}
+}
    
     
     console.log("SCORE:       "+"Player 1: "+scorep1 + "  Player2: "+scorep2)
