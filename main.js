@@ -1,23 +1,20 @@
 
-var Player1
-var Player2
 var choixP1  
 var choixP2
-var round =0
 var scorep1 = 0
 var scorep2 = 0
-
-function randp2(){
+console.log("coucou")
+function random(){
     var choix =Math.random()*100
     if (choix < 33) choix="p"
     else if(choix<66) choix = "f"
     else choix="c"
     return choix
 }
-choixP2 = randp2()
+
 
 function compare(choixp1, choixp2 ){
-    round++;
+    
     console.log("Player 1: "+choixp1 + "  Player2: "+choixp2)
     if(choixp1==choixp2){console.log("match nul")}
     else{
@@ -61,6 +58,25 @@ function compare(choixp1, choixp2 ){
         }
        
     }
+    
+}
+
+function lancer(){
+    choixP2 = random()
+    choixP1 = random()
+    compare(choixP1,choixP2)}
+
+    function match(nombrepartie) {
+        scorep1=0
+        scorep2=0
+ 
+    for(var i=0; i<nombrepartie;i++){
+        lancer()
+        
+    }
+    while(scorep1 == scorep2){lancer()}
+   
+    
     console.log("SCORE:       "+"Player 1: "+scorep1 + "  Player2: "+scorep2)
 }
 
