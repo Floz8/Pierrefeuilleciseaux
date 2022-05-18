@@ -1,7 +1,7 @@
 const {choixP1, choixP2, scorep1, scorep2,equipeGagnante,scoreEquipe1,scoreEquipe2} = require('./main.js');
 
 
-test('null Choix', () => {
+test('nullable', () => {
     expect(choixP1).not.toBeNull();
     expect(choixP1).toBeDefined();
     expect(choixP1).not.toBeUndefined();
@@ -18,6 +18,7 @@ test('null Choix', () => {
     expect(scoreEquipe2).toBeDefined();
     expect(scoreEquipe2).not.toBeUndefined();
 
+    expect(equipeGagnante).not.toBeNull();
   });
 
   test('point non négatif', () => {
@@ -28,7 +29,6 @@ test('null Choix', () => {
   });
 
   test('Contient Equipe', () => {
-    expect(equipeGagnante).toBeNull();
     expect(equipeGagnante).toContain('Equipe');
   });
 

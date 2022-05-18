@@ -107,7 +107,7 @@ function ClearHistorique(){
 
 var scoreEquipe1 = 0
 var scoreEquipe2 = 0
-var equipeGagnante = null;
+equipeGagnante = "Aucune Equipe"
 
 function Tir() {
     var choix = Math.random() * 100
@@ -141,7 +141,7 @@ function Seance() {
 
 function TireAuBut(){
     console.log("Equipe gagnante : "+Seance());
-    equipeGagnante = null
+    equipeGagnante = "Aucune Equipe"
 }
 
 //#endregion
