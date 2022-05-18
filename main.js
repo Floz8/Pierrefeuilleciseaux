@@ -5,6 +5,11 @@ var scorep1 = 0
 var scorep2 = 0
 
 /*
+* Lancement d'un test automatisé
+*/
+match(3);
+
+/*
 * Fonction Random qui retoune un choix entre Pierre Feuille & Ciseaux, 
 */
 function random(){
