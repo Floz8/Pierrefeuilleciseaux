@@ -49,8 +49,6 @@ function compare(choixp1, choixp2) {
             }
         }
 
-
-
         if (choixp1 == "c") {
 
             if (choixp2 == "p") {
