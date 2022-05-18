@@ -91,7 +91,7 @@ function match(nombrepartie) {
 
     historique.push("SCORE FINAL:       " + "Player 1: " + scorep1 + "  Player2: " + scorep2);
 
-    /* Affichage */
+    /* Affichage*/
     historique.forEach(element => {
         console.log(element);
     });
@@ -103,8 +103,10 @@ function ClearHistorique(){
 }
 
 function Tests(){
-    console.log("TDD");
+    console.log("Tout va bien :)");
 }
+
+
 
 
 
