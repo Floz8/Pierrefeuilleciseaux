@@ -1,4 +1,4 @@
-
+//#region exo 1 
 var choixP1 = 'init'
 var choixP2 = 'init'
 var scorep1 = 0
@@ -100,14 +100,53 @@ function ClearHistorique(){
     console.log("Historique vide");
 }
 
-function Tests(){
-    console.log("Tout va bien :)");
+
+//#endregion
+
+//#region  exo 2
+
+var scoreEquipe1 = 0
+var scoreEquipe2 = 0
+var equipeGagnante = null;
+
+function Tir() {
+    var choix = Math.random() * 100
+    if (choix <= 50) return 1
+    else return 0
 }
 
-module.exports = {choixP1,choixP2,scorep1,scorep2};
+function Seance() {
+    var nombreDeTir = 5;
+    for (var i = 0; i <= nombreDeTir; i++) {
+        if (equipeGagnante == null) {
+            scoreEquipe1 += Tir();
+            scoreEquipe2 += Tir();
+            if ((scoreEquipe1 - scoreEquipe2) == 3) {
+                equipeGagnante = 'Equipe 1'
+            }
+            else if ((scoreEquipe2 - scoreEquipe1) == 3) {
+                equipeGagnante = 'Equipe 2'
+            } else {
+                if (scoreEquipe1 < scoreEquipe2)
+                    equipeGagnante = 'Equipe 2'
+                else
+                    equipeGagnante = 'Equipe 1'
+            }
+        }
+        if (equipeGagnante == null) {
+        }
+        return equipeGagnante;
+    }
+}
 
+function TireAuBut(){
+    console.log("Equipe gagnante : "+Seance());
+    equipeGagnante = null
+}
 
+//#endregion
 
+module.exports = { choixP1, choixP2, scorep1, scorep2,equipeGagnante,scoreEquipe1,scoreEquipe2 };
 
 
 
