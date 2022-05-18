@@ -1,6 +1,6 @@
 
-var choixP1  
-var choixP2
+var choixP1 = 'init'
+var choixP2 = 'init'
 var scorep1 = 0
 var scorep2 = 0
 var historique = [];
@@ -104,6 +104,7 @@ function Tests(){
     console.log("Tout va bien :)");
 }
 
+module.exports = {choixP1,choixP2,scorep1,scorep2};
 
 
 
